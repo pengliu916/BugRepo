@@ -120,9 +120,9 @@ inline HRESULT _Compile(LPCWSTR shaderName,
     swprintf_s(fileName, 128, L"TSDFVolume_%ls.hlsl", shaderName);
     switch (shaderName[iLen - 2])
     {
-    case 'c': sprintf_s(target, 8, "cs_5_1"); break;
-    case 'p': sprintf_s(target, 8, "ps_5_1"); break;
-    case 'v': sprintf_s(target, 8, "vs_5_1"); break;
+    case 'c': sprintf_s(target, 8, "cs_5_0"); break;
+    case 'p': sprintf_s(target, 8, "ps_5_0"); break;
+    case 'v': sprintf_s(target, 8, "vs_5_0"); break;
     default:
         PRINTERROR(L"Shader name: %s is Invalid!", shaderName);
     }
