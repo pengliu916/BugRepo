@@ -8,21 +8,6 @@
     <ClCompile Include="pch.cpp" />
     <ClInclude Include="surfbuf_defs.h" />
     <CustomBuild Include="CalibData.inl" />
-    <ClInclude Include="FastICP\FastICP.h">
-      <Filter>FastICP</Filter>
-    </ClInclude>
-    <ClCompile Include="FastICP\FastICP.cpp">
-      <Filter>FastICP</Filter>
-    </ClCompile>
-    <ClInclude Include="FastICP\LDLT.h">
-      <Filter>FastICP</Filter>
-    </ClInclude>
-    <CustomBuild Include="FastICP\FastICP_Prepare_cs.hlsl">
-      <Filter>FastICP</Filter>
-    </CustomBuild>
-    <CustomBuild Include="FastICP\FastICP.inl">
-      <Filter>FastICP</Filter>
-    </CustomBuild>
     <ClInclude Include="SeparableFilter\SeparableFilter.h">
       <Filter>SeparableFilter</Filter>
     </ClInclude>
@@ -67,27 +52,6 @@
     </CustomBuild>
     <CustomBuild Include="SensorTexGen\SensorTexGen_SingleTriangleQuad_vs.hlsl">
       <Filter>SensorTexGen</Filter>
-    </CustomBuild>
-    <ClInclude Include="PointCloudRenderer\PointCloudRenderer.h">
-      <Filter>PointCloudRenderer</Filter>
-    </ClInclude>
-    <ClCompile Include="PointCloudRenderer\PointCloudRenderer.cpp">
-      <Filter>PointCloudRenderer</Filter>
-    </ClCompile>
-    <CustomBuild Include="PointCloudRenderer\PointCloudRenderer.inl">
-      <Filter>PointCloudRenderer</Filter>
-    </CustomBuild>
-    <CustomBuild Include="PointCloudRenderer\PointCloudRenderer_PassThrough_vs.hlsl">
-      <Filter>PointCloudRenderer</Filter>
-    </CustomBuild>
-    <CustomBuild Include="PointCloudRenderer\PointCloudRenderer_PointCloud_vs.hlsl">
-      <Filter>PointCloudRenderer</Filter>
-    </CustomBuild>
-    <CustomBuild Include="PointCloudRenderer\PointCloudRenderer_TexColor_ps.hlsl">
-      <Filter>PointCloudRenderer</Filter>
-    </CustomBuild>
-    <CustomBuild Include="PointCloudRenderer\PointCloudRenderer_TriangleCloud_gs.hlsl">
-      <Filter>PointCloudRenderer</Filter>
     </CustomBuild>
     <ClInclude Include="TSDFVolume\TSDFVolume.h">
       <Filter>TSDFVolume</Filter>
@@ -164,15 +128,6 @@
     <CustomBuild Include="NormalGenerator\NormalGenerator_GetNormal_cs.hlsl">
       <Filter>NormalGenerator</Filter>
     </CustomBuild>
-    <ClInclude Include="Reduction\Reduction.h">
-      <Filter>Reduction</Filter>
-    </ClInclude>
-    <ClCompile Include="Reduction\Reduction.cpp">
-      <Filter>Reduction</Filter>
-    </ClCompile>
-    <CustomBuild Include="Reduction\Reduction_Reduction_cs.hlsl">
-      <Filter>Reduction</Filter>
-    </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="SeparableFilter">
@@ -181,20 +136,11 @@
     <Filter Include="SensorTexGen">
       <UniqueIdentifier>{2c3e05dc-2828-43b9-a826-bf54e5c816c4}</UniqueIdentifier>
     </Filter>
-    <Filter Include="PointCloudRenderer">
-      <UniqueIdentifier>{927e22d2-e0ee-4d72-8f6c-0f292bdaaab8}</UniqueIdentifier>
-    </Filter>
     <Filter Include="TSDFVolume">
       <UniqueIdentifier>{fc3c37fe-9186-40ac-80f6-ae5c115dcdf2}</UniqueIdentifier>
     </Filter>
     <Filter Include="NormalGenerator">
       <UniqueIdentifier>{fc1a348d-2bd6-4044-888e-ef37882060e4}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Reduction">
-      <UniqueIdentifier>{32dc80ca-c158-4076-be70-5a0e48c662b3}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="FastICP">
-      <UniqueIdentifier>{c665381a-93be-4f1a-921c-5e6427ec0a0b}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

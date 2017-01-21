@@ -105,18 +105,11 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="FastICP\FastICP.h" />
-    <ClCompile Include="FastICP\FastICP.cpp" />
-    <ClInclude Include="FastICP\LDLT.h" />
     <ClInclude Include="KinectVisualizer.h" />
     <ClCompile Include="KinectVisualizer.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClInclude Include="NormalGenerator\NormalGenerator.h" />
     <ClCompile Include="NormalGenerator\NormalGenerator.cpp" />
-    <ClInclude Include="PointCloudRenderer\PointCloudRenderer.h" />
-    <ClCompile Include="PointCloudRenderer\PointCloudRenderer.cpp" />
-    <ClInclude Include="Reduction\Reduction.h" />
-    <ClCompile Include="Reduction\Reduction.cpp" />
     <ClInclude Include="SensorTexGen\LinearFrameAllocator.h" />
     <ClCompile Include="SensorTexGen\LinearFrameAllocator.cpp" />
     <ClInclude Include="SensorTexGen\SensorTexGen.h" />
@@ -145,8 +138,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <CustomBuild Include="CalibData.inl" />
-    <CustomBuild Include="FastICP\FastICP_Prepare_cs.hlsl" />
-    <CustomBuild Include="FastICP\FastICP.inl" />
     <CustomBuild Include="NormalGenerator\NormalGenerator_GetNormal_cs.hlsl" />
     <CustomBuild Include="NormalGenerator\NormalGenerator.inl" />
     <CustomBuild Include="SensorTexGen\SensorTexGen.hlsli" />
@@ -154,11 +145,6 @@
     <CustomBuild Include="SensorTexGen\SensorTexGen_Copy_ps.hlsl" />
     <CustomBuild Include="SensorTexGen\SensorTexGen_SingleTriangleQuad_vs.hlsl" />
     <CustomBuild Include="SensorTexGen\SensorTexGen.inl" />
-    <CustomBuild Include="PointCloudRenderer\PointCloudRenderer_PassThrough_vs.hlsl" />
-    <CustomBuild Include="PointCloudRenderer\PointCloudRenderer_PointCloud_vs.hlsl" />
-    <CustomBuild Include="PointCloudRenderer\PointCloudRenderer_TexColor_ps.hlsl" />
-    <CustomBuild Include="PointCloudRenderer\PointCloudRenderer_TriangleCloud_gs.hlsl" />
-    <CustomBuild Include="PointCloudRenderer\PointCloudRenderer.inl" />
     <CustomBuild Include="SeparableFilter\SeparableFilter_BilateralFilter_cs.hlsl" />
     <CustomBuild Include="SeparableFilter\SeparableFilter_BilateralFilter_ps.hlsl" />
     <CustomBuild Include="SeparableFilter\SeparableFilter_SingleTriangleQuad_vs.hlsl" />
@@ -180,7 +166,6 @@
     <CustomBuild Include="TSDFVolume\TSDFVolume_VolumeUpdate_cs.hlsl" />
     <CustomBuild Include="TSDFVolume\TSDFVolume_VolumeReset_cs.hlsl" />
     <CustomBuild Include="TSDFVolume\TSDFVolume_VoxelUpdate.hlsli" />
-    <CustomBuild Include="Reduction\Reduction_Reduction_cs.hlsl" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
